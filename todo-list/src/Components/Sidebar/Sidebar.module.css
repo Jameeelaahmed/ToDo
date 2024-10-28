@@ -1,0 +1,44 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--main-color);
+    /* background-color: aqua; */
+    overflow-y: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* background-color: var(--secondary-color); */
+    border: var(--secondary-color) 1px solid;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.profile .user {
+    margin-left: 10px;
+}
+
+.profile_img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.list_container {
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.list {
+    display: flex;
+    color: var(--secondary-color);
+    padding: 15px 0;
+}
+
+.word {
+    margin-left: 10px;
+}

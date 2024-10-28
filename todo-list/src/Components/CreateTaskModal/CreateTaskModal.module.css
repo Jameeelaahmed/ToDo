@@ -1,0 +1,112 @@
+.modal {
+    padding: 10px;
+    width: 35%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(grey-shadow);
+    animation: fadeSlideIn 0.3s ease-in-out;
+    color: var(--main-color);
+    align-self: flex-end;
+    margin: 0 auto 100px;
+    outline: none;
+    z-index: -1;
+    height: fit-content;
+}
+
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        /* Start slightly below the screen */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Move to its final position */
+    }
+}
+
+
+.input input {
+    width: 100%;
+    height: 30px;
+    background-color: #f1f2f7;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 10px;
+    caret-color: var(--secondary-color);
+    transition: 0.4s;
+
+}
+
+.input input::placeholder {
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.input input:focus::placeholder {
+    opacity: 0;
+}
+
+.input input:focus {
+    border: 2px solid var(--secondary-color);
+    outline: none;
+}
+
+/* .modal::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+} */
+
+.btns {
+    width: 100%;
+}
+
+.btns button:first-child {
+    width: 48%;
+    margin-right: 2%;
+    margin-top: 15px;
+}
+
+.btns button:last-child {
+    width: 48%;
+}
+
+.btns button {
+    background-color: var(--main-color);
+    padding: 12px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    color: var(--secondary-color);
+    font-weight: bolder;
+    transition: 0.4s;
+}
+
+.btns button:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.buttons button {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--main-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
